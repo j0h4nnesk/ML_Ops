@@ -87,7 +87,7 @@ Published pipeline overview showing a REST endpoint and an ACTIVE status:
 Jupyter Notebook showing that the RunDetails Widget shows the run steps:
 ![alt text](starter_files/img/23.png)
 Azure ML Studio showing completed runs:
-![alt text](starter_files/img/24.png)
+![alt text](starter_files/img/25.png)
 
 
 ## Screen Recording
@@ -97,10 +97,3 @@ Azure ML Studio showing completed runs:
 - The deployed Pipeline
 - Available AutoML Model
 - Successful API requests to the endpoint with a JSON payload
-
-
-TODO Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
-
-Standout Suggestions
-
-TODO (Optional): This is where you can provide information about any standout suggestions that you have attempted.
