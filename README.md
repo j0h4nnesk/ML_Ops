@@ -28,7 +28,7 @@ The following architectural diagram shows on upper lever a visualized overview o
 
 ## Screenshots
 #### Step 2: Automated ML Experiment
-In this step first the dataset is uploaded to Azure
+In this step first the dataset is uploaded to Azure:
 ![alt text](starter_files/img/1.png)
 Next a new Auto ML run is created using the uploaded dataset and the following configurations:
 - Task: *Classification
@@ -36,10 +36,26 @@ Next a new Auto ML run is created using the uploaded dataset and the following c
 - *Explain best model
 - Exit criterion: *1 hour in Job training time (hours)
 - *Max concurrent iterations*: 5. Number of concurrent operations must always be less than the maximum number of nodes configured in the cluster.
-![alt text](starter_files/img/2.png)
 
+![alt text](starter_files/img/2.png)
+Experiment is completed:
+![alt text](starter_files/img/3.png)
+![alt text](starter_files/img/5.png)
+We can see the best model and details about it:
+![alt text](starter_files/img/6.png)
+![alt text](starter_files/img/8.png)
+Interesting info about potential issues with the data can be seen by clicking the *Data guardrail* tab, for example that imbalanced data issue is flagged:
+![alt text](starter_files/img/9.png)
 
 #### Step 3: Deploy the Best Model
+Next the best model is deployed. First the best model is chosen by selecting the best performing model, in this case by *Accuracy*, from the *Models* tab. Then the model is deployed with *Authentication* enabled and using *Azure Container Instance (ACI)*. Deploying the Best Model will allow to interact with the HTTP API service and interact with the model by sending data over POST requests.
+
+#### Step 4: Enable Application Insights
+Now that the Best Model is deployed,  Application Insights is enabled to retrieve logs. You can see *Application Insights* enabled in the *Details* tab of the endpoint:
+![alt text](starter_files/img/10.png)
+Application Insights running: 
+![alt text](starter_files/img/11.png)
+![alt text](starter_files/img/12.png)
 
 
 
