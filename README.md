@@ -97,3 +97,12 @@ Azure ML Studio showing completed runs:
 - The deployed Pipeline
 - Available AutoML Model
 - Successful API requests to the endpoint with a JSON payload
+
+
+## Future Improvements
+
+- As also mentioned in the first project conserning this same dataset, it would be interesting to do more exploratory data analysis prior to experimenting, as to find out e.g. imbalances in target classes, which is a quite common issues with classification problems impacting the model's accuracy - accuracy of majority class can be very high, while minority class accuracy can be very poor. As could be seen in this case, the *Data Guardrails* tab (shown in screenshots) indicated that there is imbalance with the target classes. As a solution for imbalanced data for example [resampling techniques could be used such as oversanmpling minority class or undersampling majority class](https://towardsdatascience.com/methods-for-dealing-with-imbalanced-data-5b761be45a18), or even generate synthetic data for training the model (however it's worth noting that it’s important to generate the new samples only in the training set to ensure that the model generalizes well to unseen data). 
+
+- Another idea to improve the model would be to increase the training time. This would of-course increase costs but in turn a higher performing model could be achieved - however certain balance between cost and performance should always be met.
+
+
