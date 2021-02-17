@@ -64,10 +64,30 @@ The [Swagger UI](https://swagger.io/tools/swagger-ui/download/) is an open sourc
 
 In this step the deployed model is consumed using Swagger. Azure provides a Swagger JSON file for deployed models in the Endpoints section of the deployed model. This file is then downloaded and saved in the Swagger folder. Then swagger.sh and serve.py files are executed. The two files download and run the latest Swagger container (swagger.sh), and start a Python server.
 ![alt text](starter_files/img/13.5.png)
+Below we can see the HTTP API methods and responses for the model:
 ![alt text](starter_files/img/14.png)
 ![alt text](starter_files/img/15.png)
 ![alt text](starter_files/img/16.png)
 
+#### Step 6: Consume Model Endpoints
+Once the model is deployed, ```endpoint.py``` script is used to interact with the trained model. The script is run after modifying both the scoring_uri and the key to match the key for Azure service and the URI that was generated after deployment.
+![alt text](starter_files/img/17.png)
+![alt text](starter_files/img/18.png)
+
+#### Step 7: Create, Publish and Consume a Pipeline
+For this part of the project, the provided Jupyter Notebook: ```ml-pipelines-with-automated-machine-learning-step.ipynb``` is used. The notebook is updated to have the same keys, URI, dataset, cluster, and model names that have already been created.
+
+The purpose of this step is to create, publish and consume a pipeline using the Azure Python SDK:
+![alt text](starter_files/img/19.png)
+Bankmarketing dataset with the AutoML module:
+![alt text](starter_files/img/21.png)
+Published pipeline overview showing a REST endpoint and an ACTIVE status:
+![alt text](starter_files/img/20.png)
+![alt text](starter_files/img/22.png)
+Jupyter Notebook showing that the RunDetails Widget shows the run steps:
+![alt text](starter_files/img/23.png)
+Azure ML Studio showing completed runs:
+![alt text](starter_files/img/24.png)
 
 
 ## Screen Recording
