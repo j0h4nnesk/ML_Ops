@@ -26,7 +26,22 @@ The following architectural diagram shows on upper lever a visualized overview o
 
 *Documentation:* The documentation includes the [screencast](https://www.icloud.com/iclouddrive/0wQMFD1pP10Ece8n2Du459lWg#Udacity%5Fscreencast) that shows the entire process of the working ML application, and this README.md file that describes the project and documents the main steps.
 
-TODO: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps.
+## Screenshots
+#### Step 2: Automated ML Experiment
+In this step first the dataset is uploaded to Azure
+![alt text](starter_files/img/1.png)
+Next a new Auto ML run is created using the uploaded dataset and the following configurations:
+- Task: *Classification
+- Primary metric: *Accuracy
+- *Explain best model
+- Exit criterion: *1 hour in Job training time (hours)
+- *Max concurrent iterations*: 5. Number of concurrent operations must always be less than the maximum number of nodes configured in the cluster.
+![alt text](starter_files/img/2.png)
+
+
+#### Step 3: Deploy the Best Model
+
+
 
 ## Screen Recording
 [Here](https://www.icloud.com/iclouddrive/0wQMFD1pP10Ece8n2Du459lWg#Udacity%5Fscreencast) is a link to the screencast which demonstrates:
