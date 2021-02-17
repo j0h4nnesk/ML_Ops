@@ -56,6 +56,17 @@ Now that the Best Model is deployed,  Application Insights is enabled to retriev
 Application Insights running: 
 ![alt text](starter_files/img/11.png)
 ![alt text](starter_files/img/12.png)
+```logs.py``` script running:
+![alt text](starter_files/img/13.png)
+
+#### Step 5: Swagger Documentation
+The [Swagger UI](https://swagger.io/tools/swagger-ui/download/) is an open source project to visually render documentation for an API defined with the OpenAPI (Swagger) Specification. Swagger UI lets you visualize and interact with the API’s resources without having any of the implementation logic in place, making it easy for back end implementation and client side consumption
+
+In this step the deployed model is consumed using Swagger. Azure provides a Swagger JSON file for deployed models in the Endpoints section of the deployed model. This file is then downloaded and saved in the Swagger folder. Then swagger.sh and serve.py files are executed. The two files download and run the latest Swagger container (swagger.sh), and start a Python server.
+![alt text](starter_files/img/13.5.png)
+![alt text](starter_files/img/14.png)
+![alt text](starter_files/img/15.png)
+![alt text](starter_files/img/16.png)
 
 
 
